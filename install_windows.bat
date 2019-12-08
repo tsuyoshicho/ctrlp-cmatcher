@@ -1,6 +1,6 @@
 @echo off
 pushd autoload
-python setup.py build -c mingw32
+py -2 setup.py build -c mingw32
 pushd build\lib*
 xcopy fuzzycomt.pyd ..\..\
 popd
